@@ -1,0 +1,10 @@
+name: Update loan defaults
+on:
+  schedule:
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "No external rates required"
